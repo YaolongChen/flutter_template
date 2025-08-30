@@ -1,5 +1,7 @@
 # flutter_template
 
+A flutter template suitable for small and medium-sized projects.
+
 ## Packages
 
 | Feature            | Package                                         |
