@@ -19,13 +19,17 @@ GoRouter router(AuthRepository authRepository) => GoRouter(
     GoRoute(
       path: Routes.home,
       builder: (context, state) {
-        return HomeScreen(viewModel: HomeViewModel());
+        return HomeScreen(
+          viewModel: HomeViewModel(authRepository: context.read()),
+        );
       },
     ),
     GoRoute(
       path: Routes.login,
       builder: (context, state) {
-        return LoginScreen(viewModel: LoginViewModel());
+        return LoginScreen(
+          viewModel: LoginViewModel(authRepository: context.read()),
+        );
       },
     ),
   ],

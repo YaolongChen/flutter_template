@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import 'config/dependencies.dart';
 import 'routing/router.dart';
+import 'ui/core/theme/theme.dart';
 
 void main() {
   runApp(MultiProvider(providers: providersProduct, child: const MainApp()));
@@ -13,6 +14,9 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(routerConfig: router(context.read()));
+    return MaterialApp.router(
+      theme: AppTheme.lightTheme,
+      routerConfig: router(context.read()),
+    );
   }
 }
