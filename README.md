@@ -10,3 +10,4 @@ A flutter template suitable for small and medium-sized projects.
 | DependenciesInject | [provider](https://pub.dev/packages/provider)                     |
 | Log                | [logging](https://pub.dev/packages/logging)                       |       
 | KVStrore           | [shared_preferences](https://pub.dev/packages/shared_preferences) |                                                |
+| HTTP               | [http](https://pub.dev/packages/http)                             |
